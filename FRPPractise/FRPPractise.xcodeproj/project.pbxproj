@@ -14,6 +14,8 @@
 		2A20D1B31E40C07E0048CFEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A20D1B21E40C07E0048CFEB /* Assets.xcassets */; };
 		2A20D1B61E40C07E0048CFEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A20D1B41E40C07E0048CFEB /* LaunchScreen.storyboard */; };
 		2A20D1C11E40C07E0048CFEB /* FRPPractiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A20D1C01E40C07E0048CFEB /* FRPPractiseTests.m */; };
+		2A20D1CF1E40DD930048CFEB /* FRPPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A20D1CE1E40DD930048CFEB /* FRPPhotoModel.m */; };
+		2A20D1D21E40DE2D0048CFEB /* FRPPhotoImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A20D1D11E40DE2D0048CFEB /* FRPPhotoImporter.m */; };
 		CF8559B014CF69407B5C568D /* Pods_FRPPractiseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466C1960F4EAB5B30D46A9FC /* Pods_FRPPractiseTests.framework */; };
 		E327944F62EE9D8A43201485 /* Pods_FRPPractise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4090783237B0530929785532 /* Pods_FRPPractise.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,10 @@
 		2A20D1C01E40C07E0048CFEB /* FRPPractiseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPPractiseTests.m; sourceTree = "<group>"; };
 		2A20D1C21E40C07E0048CFEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A20D1CC1E40C8430048CFEB /* FRPPractise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FRPPractise-Prefix.pch"; sourceTree = "<group>"; };
+		2A20D1CD1E40DD930048CFEB /* FRPPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPPhotoModel.h; sourceTree = "<group>"; };
+		2A20D1CE1E40DD930048CFEB /* FRPPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoModel.m; sourceTree = "<group>"; };
+		2A20D1D01E40DE2D0048CFEB /* FRPPhotoImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPPhotoImporter.h; sourceTree = "<group>"; };
+		2A20D1D11E40DE2D0048CFEB /* FRPPhotoImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoImporter.m; sourceTree = "<group>"; };
 		4090783237B0530929785532 /* Pods_FRPPractise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRPPractise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		466C1960F4EAB5B30D46A9FC /* Pods_FRPPractiseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRPPractiseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B0C73C9B00FE4109CBECC6 /* Pods-FRPPractiseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRPPractiseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRPPractiseTests/Pods-FRPPractiseTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +119,10 @@
 				2A20D1B71E40C07E0048CFEB /* Info.plist */,
 				2A20D1A61E40C07E0048CFEB /* Supporting Files */,
 				2A20D1CC1E40C8430048CFEB /* FRPPractise-Prefix.pch */,
+				2A20D1CD1E40DD930048CFEB /* FRPPhotoModel.h */,
+				2A20D1CE1E40DD930048CFEB /* FRPPhotoModel.m */,
+				2A20D1D01E40DE2D0048CFEB /* FRPPhotoImporter.h */,
+				2A20D1D11E40DE2D0048CFEB /* FRPPhotoImporter.m */,
 			);
 			path = FRPPractise;
 			sourceTree = "<group>";
@@ -349,8 +359,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A20D1AE1E40C07E0048CFEB /* ViewController.m in Sources */,
+				2A20D1CF1E40DD930048CFEB /* FRPPhotoModel.m in Sources */,
 				2A20D1AB1E40C07E0048CFEB /* AppDelegate.m in Sources */,
 				2A20D1A81E40C07E0048CFEB /* main.m in Sources */,
+				2A20D1D21E40DE2D0048CFEB /* FRPPhotoImporter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

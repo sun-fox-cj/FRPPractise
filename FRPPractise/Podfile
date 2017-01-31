@@ -4,10 +4,10 @@
 target 'FRPPractise' do
     use_frameworks!
     
-    pod 'ReactiveCocoa'
-    pod 'libextobjc'
-    pod '500px-iOS-api'
-    pod 'SVProgressHUD'
+    pod 'ReactiveCocoa', '~> 2.1.4'
+    pod 'libextobjc', '~> 0.3'
+    pod '500px-iOS-api', '~> 1.0.5'
+    pod 'SVProgressHUD', '~> 0.9'
     
     post_install do |installer|
         installer.pods_project.targets.each do |target|

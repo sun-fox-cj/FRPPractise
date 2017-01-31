@@ -10,6 +10,8 @@
 
 @interface AppDelegate ()
 
+@property (nonatomic, readwrite) PXAPIHelper* apiHelper;
+
 @end
 
 @implementation AppDelegate
@@ -17,6 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    _apiHelper = [[PXAPIHelper alloc] initWithHost:nil consumerKey:@"RjWKQpnrMVQIeebag61QfIcvObig9gNy6mLvfK8U" consumerSecret:@"P8prLZ8064JEDkyXf6y6ibnMRnx7Ba8SGhhgBFXn"];
+    
     return YES;
 }
 
