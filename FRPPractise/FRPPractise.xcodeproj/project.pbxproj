@@ -42,6 +42,7 @@
 		2A20D1BC1E40C07E0048CFEB /* FRPPractiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRPPractiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A20D1C01E40C07E0048CFEB /* FRPPractiseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPPractiseTests.m; sourceTree = "<group>"; };
 		2A20D1C21E40C07E0048CFEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A20D1CC1E40C8430048CFEB /* FRPPractise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FRPPractise-Prefix.pch"; sourceTree = "<group>"; };
 		4090783237B0530929785532 /* Pods_FRPPractise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRPPractise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		466C1960F4EAB5B30D46A9FC /* Pods_FRPPractiseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRPPractiseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B0C73C9B00FE4109CBECC6 /* Pods-FRPPractiseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRPPractiseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRPPractiseTests/Pods-FRPPractiseTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 				2A20D1B41E40C07E0048CFEB /* LaunchScreen.storyboard */,
 				2A20D1B71E40C07E0048CFEB /* Info.plist */,
 				2A20D1A61E40C07E0048CFEB /* Supporting Files */,
+				2A20D1CC1E40C8430048CFEB /* FRPPractise-Prefix.pch */,
 			);
 			path = FRPPractise;
 			sourceTree = "<group>";
@@ -484,6 +486,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 266Y8BZ99E;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRPPractise/FRPPractise-Prefix.pch";
 				INFOPLIST_FILE = FRPPractise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sina.cjfire.FRPPractise;
@@ -497,6 +501,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 266Y8BZ99E;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRPPractise/FRPPractise-Prefix.pch";
 				INFOPLIST_FILE = FRPPractise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sina.cjfire.FRPPractise;
@@ -551,6 +557,7 @@
 				2A20D1C71E40C07E0048CFEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A20D1C81E40C07E0048CFEB /* Build configuration list for PBXNativeTarget "FRPPractiseTests" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +566,7 @@
 				2A20D1CA1E40C07E0048CFEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
