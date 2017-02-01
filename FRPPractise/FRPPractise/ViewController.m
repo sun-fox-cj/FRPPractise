@@ -9,8 +9,10 @@
 #import "ViewController.h"
 #import "FRPPhotoImporter.h"
 #import "FRPCell.h"
+#import "FRPGalleryFlowLayout.h"
+#import "FRPFullSizePhotoViewController.h"
 
-@interface ViewController () <UICollectionViewDataSource>
+@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate, FRPFullSizePhotoViewControllerDelegate>
 
 @property (nonatomic , strong) NSArray *photosArray;
 @property (nonatomic, weak) UICollectionView* collectionView;
@@ -44,13 +46,14 @@ static NSString * CellIdentifier = @"Cell";
 }
 
 - (void)setupUI {
-    UICollectionViewFlowLayout* layout = [UICollectionViewFlowLayout new];
+    FRPGalleryFlowLayout* layout = [FRPGalleryFlowLayout new];
     UICollectionView* collectionview = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     
     [self.view addSubview:collectionview];
     _collectionView = collectionview;
     
     _collectionView.dataSource = self;
+    _collectionView.delegate = self;
 }
 
 - (void)loadPopularPhotos{
@@ -76,6 +79,21 @@ static NSString * CellIdentifier = @"Cell";
     [cell setPhotoModel:self.photosArray[indexPath.row]];
     
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView
+didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    FRPFullSizePhotoViewController * viewController = [[FRPFullSizePhotoViewController alloc] initWithPhotoModels:self.photosArray currentPhotoIndex:indexPath.item];
+    
+    viewController.delegate = self;
+    [self.navigationController pushViewController:viewController animated:YES];
+    
+}
+
+- (void)userDidScroll:(FRPFullSizePhotoViewController *)viewController toPhotoAtIndex:(NSInteger)index{
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0]
+                                atScrollPosition:UICollectionViewScrollPositionCenteredVertically
+                                        animated:NO];
 }
 
 @end

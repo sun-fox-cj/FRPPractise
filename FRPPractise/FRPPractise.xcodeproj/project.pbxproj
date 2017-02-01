@@ -17,6 +17,9 @@
 		2A20D1CF1E40DD930048CFEB /* FRPPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A20D1CE1E40DD930048CFEB /* FRPPhotoModel.m */; };
 		2A20D1D21E40DE2D0048CFEB /* FRPPhotoImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A20D1D11E40DE2D0048CFEB /* FRPPhotoImporter.m */; };
 		2A20D1D81E41764E0048CFEB /* FRPCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A20D1D71E41764E0048CFEB /* FRPCell.m */; };
+		2A20D1DB1E417C770048CFEB /* FRPGalleryFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A20D1DA1E417C770048CFEB /* FRPGalleryFlowLayout.m */; };
+		2A20D1DE1E4186330048CFEB /* FRPFullSizePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A20D1DD1E4186330048CFEB /* FRPFullSizePhotoViewController.m */; };
+		2A20D1E11E41D5D70048CFEB /* FRPPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A20D1E01E41D5D70048CFEB /* FRPPhotoViewController.m */; };
 		CF8559B014CF69407B5C568D /* Pods_FRPPractiseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466C1960F4EAB5B30D46A9FC /* Pods_FRPPractiseTests.framework */; };
 		E327944F62EE9D8A43201485 /* Pods_FRPPractise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4090783237B0530929785532 /* Pods_FRPPractise.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +55,12 @@
 		2A20D1D11E40DE2D0048CFEB /* FRPPhotoImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoImporter.m; sourceTree = "<group>"; };
 		2A20D1D61E41764E0048CFEB /* FRPCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPCell.h; sourceTree = "<group>"; };
 		2A20D1D71E41764E0048CFEB /* FRPCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPCell.m; sourceTree = "<group>"; };
+		2A20D1D91E417C770048CFEB /* FRPGalleryFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPGalleryFlowLayout.h; sourceTree = "<group>"; };
+		2A20D1DA1E417C770048CFEB /* FRPGalleryFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPGalleryFlowLayout.m; sourceTree = "<group>"; };
+		2A20D1DC1E4186330048CFEB /* FRPFullSizePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPFullSizePhotoViewController.h; sourceTree = "<group>"; };
+		2A20D1DD1E4186330048CFEB /* FRPFullSizePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPFullSizePhotoViewController.m; sourceTree = "<group>"; };
+		2A20D1DF1E41D5D70048CFEB /* FRPPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPPhotoViewController.h; sourceTree = "<group>"; };
+		2A20D1E01E41D5D70048CFEB /* FRPPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoViewController.m; sourceTree = "<group>"; };
 		4090783237B0530929785532 /* Pods_FRPPractise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRPPractise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		466C1960F4EAB5B30D46A9FC /* Pods_FRPPractiseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRPPractiseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B0C73C9B00FE4109CBECC6 /* Pods-FRPPractiseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRPPractiseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRPPractiseTests/Pods-FRPPractiseTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +137,12 @@
 				2A20D1D11E40DE2D0048CFEB /* FRPPhotoImporter.m */,
 				2A20D1D61E41764E0048CFEB /* FRPCell.h */,
 				2A20D1D71E41764E0048CFEB /* FRPCell.m */,
+				2A20D1D91E417C770048CFEB /* FRPGalleryFlowLayout.h */,
+				2A20D1DA1E417C770048CFEB /* FRPGalleryFlowLayout.m */,
+				2A20D1DC1E4186330048CFEB /* FRPFullSizePhotoViewController.h */,
+				2A20D1DD1E4186330048CFEB /* FRPFullSizePhotoViewController.m */,
+				2A20D1DF1E41D5D70048CFEB /* FRPPhotoViewController.h */,
+				2A20D1E01E41D5D70048CFEB /* FRPPhotoViewController.m */,
 			);
 			path = FRPPractise;
 			sourceTree = "<group>";
@@ -365,7 +380,10 @@
 			files = (
 				2A20D1AE1E40C07E0048CFEB /* ViewController.m in Sources */,
 				2A20D1CF1E40DD930048CFEB /* FRPPhotoModel.m in Sources */,
+				2A20D1DB1E417C770048CFEB /* FRPGalleryFlowLayout.m in Sources */,
+				2A20D1E11E41D5D70048CFEB /* FRPPhotoViewController.m in Sources */,
 				2A20D1D81E41764E0048CFEB /* FRPCell.m in Sources */,
+				2A20D1DE1E4186330048CFEB /* FRPFullSizePhotoViewController.m in Sources */,
 				2A20D1AB1E40C07E0048CFEB /* AppDelegate.m in Sources */,
 				2A20D1A81E40C07E0048CFEB /* main.m in Sources */,
 				2A20D1D21E40DE2D0048CFEB /* FRPPhotoImporter.m in Sources */,

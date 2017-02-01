@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
+@class FRPPhotoModel;
+
 @interface FRPPhotoImporter : NSObject
 
 + (RACSignal *)importPhotos;
++ (RACReplaySubject *)fetchPhotoDetails:(FRPPhotoModel *)photoModel;
 
 @end
