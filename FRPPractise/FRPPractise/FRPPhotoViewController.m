@@ -47,6 +47,7 @@
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     
     RAC(imageView, image) = [RACObserve(self.photoModel, fullsizedData) map:^id (id value){
+        [SVProgressHUD dismiss];
         return [UIImage imageWithData:value];
     }];
     
@@ -63,9 +64,6 @@
     [[FRPPhotoImporter fetchPhotoDetails:self.photoModel]
      subscribeError:^(NSError *error){
          [SVProgressHUD showErrorWithStatus:@"Error"];
-     }
-     completed:^{
-         [SVProgressHUD dismiss];
      }];
 }
 

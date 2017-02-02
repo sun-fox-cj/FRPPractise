@@ -20,7 +20,7 @@
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^ (NSURLResponse *response, NSData * data, NSError *connectionError){
                                if(data){
-                                   id results = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil][ @"photo" ];
+                                   id results = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil][ @"photo"];
                                    
                                    [self configurePhotoModel:photoModel withDictionary:results];
                                    [self downloadFullsizedImageForPhotoModel:photoModel];

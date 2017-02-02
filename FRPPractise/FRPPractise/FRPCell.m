@@ -19,7 +19,6 @@
 
 - (void)setPhotoModel:(FRPPhotoModel *)photoModel{
     
-    
     self.subscription = [[[RACObserve(photoModel, thumbnailData) filter:^BOOL(id value) {
         return value != nil;
     }] map:^id(id value) {
@@ -43,10 +42,9 @@
     return self;
 }
 
-- (void)perpareForReuse {
-    [super prepareForReuse];
-    
+- (void)prepareForReuse {
     [self.subscription dispose], self.subscription = nil;
+    [super prepareForReuse];
 }
 
 @end
